@@ -1,17 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shyam Singh Padihar | Data Analyst</title>
+<title>Shyam Singh Padihar | Data Analyst Portfolio</title>
+
+<meta name="description" content="Data Analyst Portfolio of Shyam Singh Padihar. Skilled in Python, SQL, Excel, Tableau, Power BI.">
+<meta name="keywords" content="Data Analyst, Python, SQL, Excel, Tableau, Power BI">
+<meta name="author" content="Shyam Singh Padihar">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
-  <h2>Shyam</h2>
+  <h2>Shyam Singh</h2>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -20,15 +27,17 @@
   </ul>
 </nav>
 
+<!-- HERO SECTION -->
 <header class="hero">
   <h1>Data Analyst Portfolio</h1>
   <p>Python | SQL | Excel | Tableau | Power BI</p>
   <div class="btns">
-    <a href="#" class="btn">Download Resume</a>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
     <a href="#projects" class="btn outline">View Projects</a>
   </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about">
 <h2>About Me</h2>
 <p>
@@ -40,67 +49,92 @@ I aim to contribute to data-driven decision-making and continuously enhance my a
 </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <h2>Skills</h2>
 <div class="grid">
-<div class="card">Python</div>
-<div class="card">SQL / MySQL</div>
-<div class="card">Excel (Advanced)</div>
-<div class="card">Tableau</div>
-<div class="card">Power BI</div>
-<div class="card">Pandas & NumPy</div>
-<div class="card">Matplotlib & Seaborn</div>
-<div class="card">Statistics</div>
+  <div class="card">Python</div>
+  <div class="card">SQL / MySQL</div>
+  <div class="card">Advanced Excel</div>
+  <div class="card">Tableau</div>
+  <div class="card">Power BI</div>
+  <div class="card">Pandas & NumPy</div>
+  <div class="card">Matplotlib & Seaborn</div>
+  <div class="card">Statistics</div>
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 
 <div class="project">
-<h3>Sales Data Analysis</h3>
-<p>Analyzed sales data using Python, performed EDA, and visualized insights.</p>
+<h3>📊 Sales Data Analysis (Python)</h3>
+<p>
+Performed data cleaning, EDA, and visualized sales & profit trends using Pandas, NumPy, Matplotlib, and Seaborn.
+</p>
 </div>
 
 <div class="project">
-<h3>Customer Segmentation</h3>
-<p>Segmented customers using statistical analysis and grouping methods.</p>
+<h3>📈 Customer Segmentation Analysis</h3>
+<p>
+Segmented customers using statistical analysis and grouping techniques to identify high-value customers.
+</p>
 </div>
 
 <div class="project">
-<h3>Tableau Business Dashboard</h3>
-<p>Created interactive dashboards with KPIs and filters.</p>
+<h3>📊 Tableau Business Dashboard</h3>
+<p>
+Built interactive dashboards with KPIs, filters, and parameters for business decision-making.
+</p>
 </div>
 
 </section>
 
+<!-- SAMPLE INSIGHTS -->
 <section id="charts">
-<h2>Sample Insights</h2>
+<h2>Insights</h2>
 <div class="chart-box">
-<p>📊 Sales & Profit Trend Analysis (Sample Visualization)</p>
+<p>📉 Sales & Profit Trend Analysis (Visualization )</p>
 </div>
 </section>
 
+<!-- CONTACT + WEB3FORMS -->
 <section id="contact">
-<h2>Contact</h2>
+<h2>Contact Me</h2>
+
 <p>📍 Indore, Madhya Pradesh</p>
 <p>📞 6261916874</p>
 <p>📧 shyamsinghpadihar465@gmail.com</p>
 
 <h3>Ask / Suggest</h3>
-<form onsubmit="sendMsg(event)">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" required></textarea>
-<button type="submit">Send</button>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="fc4d2e2d-430b-4090-9196-af9c8578be96">
+
+  <!-- Email Subject -->
+  <input type="hidden" name="subject" value="New Message from Portfolio">
+
+  <!-- Stay on same page after submit -->
+  <input type="hidden" name="redirect" value="false">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Your Message / Suggestion" required></textarea>
+
+  <button type="submit">Send Message</button>
 </form>
-<p id="response"></p>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2025 Shyam Singh Padihar</p>
+<p>© 2025 Shyam Singh Padihar | Data Analyst</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
